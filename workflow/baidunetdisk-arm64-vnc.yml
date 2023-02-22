@@ -2,9 +2,7 @@ name: baidunetdisk-arm64-vnc
 
 on:
   push:
-    paths:
-    - './'
-  workflow_dispatch:
+    branches: [ "main" ]
 
 jobs:
   job1:
