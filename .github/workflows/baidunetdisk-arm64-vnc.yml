@@ -14,7 +14,7 @@ jobs:
 
       - name: 'Set env'
         run: |
-          echo "BAIDUNETDISK_VER_ARM64=$(echo `grep -n "BAIDUNETDISK_VER=" baidunetdisk/Dockerfile.arm64`|awk -F: '{print $2}'|cut -d "=" -f 2)" >> $GITHUB_ENV
+          echo "BAIDUNETDISK_VER_ARM64=$(echo `grep -n "BAIDUNETDISK_VER=" Dockerfile.arm64`|awk -F: '{print $2}'|cut -d "=" -f 2)" >> $GITHUB_ENV
 
       - name: Set up QEMU
         id: qemu
