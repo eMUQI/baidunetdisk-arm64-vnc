@@ -46,9 +46,7 @@ jobs:
 
       - name: create version tag
         run: |
-          docker buildx imagetools create -t emuqi/baidunetdisk-arm64-vnc:latest \
-            emuqi/baidunetdisk-arm64-vnc:v_${{ env.BAIDUNETDISK_VER }} \
-            emuqi/baidunetdisk-arm64-vnc:v_${{ env.BAIDUNETDISK_VER_ARM64 }}_arm64v8
+          docker buildx imagetools create -t emuqi/baidunetdisk-arm64-vnc:v_${{ env.BAIDUNETDISK_VER_ARM64 }}_arm64v8
 
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v3
