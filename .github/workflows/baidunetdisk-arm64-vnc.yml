@@ -43,7 +43,7 @@ jobs:
           push: true
           tags: |
             emuqi/baidunetdisk-arm64-vnc:latest
-            emuqi/baidunetdisk-arm64-vnc:v_${{ env.BAIDUNETDISK_VER_ARM64 }}_arm64v8
+            emuqi/baidunetdisk-arm64-vnc:${{ env.BAIDUNETDISK_VER_ARM64 }}
 
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v3
@@ -51,5 +51,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: emuqi/baidunetdisk-arm64-vnc
-          short-description: 基于百度网盘官方Linux(${{ env.BAIDUNETDISK_VER }})版本，安装在docker容器内，支持通过noVNC或者VNC访问。 支持 树莓派4B arm64版本系统，理论上也支持其他arm64的设备。
+          short-description: 基于百度网盘官方Linux(${{ env.BAIDUNETDISK_VER_ARM64}})版本，安装在docker容器内，支持通过noVNC或者VNC访问。 支持 树莓派4B arm64版本系统，理论上也支持其他arm64的设备。
           readme-filepath: ./README.md
