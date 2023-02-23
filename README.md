@@ -19,7 +19,7 @@ docker run -d \
 ```
 其中需要修改的是`/配置文件位置:/config`和`/下载位置:/config/baidunetdiskdownload`，冒号前的路径修改为你希望储存位置。
 
-如果希望用密码限制访问，在`-p 5900:5900 \`后加上`-e VNC_PASSWORD=password \`,等号后面写你要设置的密码。
+如果希望用密码限制访问，在`-p 5900:5900 \`后加上`-e VNC_PASSWORD=password \`，等号后面写你要设置的密码。
 
 运行成功后访问方式见：[使用方式](#使用方式)
 
@@ -38,7 +38,7 @@ docker-compose up -d
 ```
 你可能希望修改`docker-compose.yml`里配置存放的位置`${PWD}/bdnetdisk-config:/config`和下载文件的位置`${PWD}/downloads:/config/baidunetdiskdownload`。修改冒号前的部分。
 
-如果希望用密码限制访问，在`- GROUP_ID=1000 `后加上`- VNC_PASSWORD=password`,等号后面写你要设置的密码。
+如果希望用密码限制访问，在`- GROUP_ID=1000 `后加上`- VNC_PASSWORD=password`，等号后面写你要设置的密码。
 
 运行成功后访问方式见：[使用方式](#使用方式)
 
