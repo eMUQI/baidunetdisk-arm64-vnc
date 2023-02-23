@@ -51,5 +51,5 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: emuqi/baidunetdisk-arm64-vnc
-          short-description: 基于百度网盘官方Linux客户端(${{ env.BAIDUNETDISK_VER_ARM64}}版本)，安装在docker容器内，支持通过noVNC或者VNC访问。 支持 树莓派4B arm64版本系统，理论上也支持其他arm64的设备。
+          short-description: 基于百度网盘官方 Linux arm 客户端(${{ env.BAIDUNETDISK_VER_ARM64}}版本)，安装在docker容器内，支持通过noVNC（网页）或者VNC访问。 支持 树莓派4B arm64版本系统，理论上也支持其他arm64的设备。
           readme-filepath: ./README.md
