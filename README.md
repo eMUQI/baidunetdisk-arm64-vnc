@@ -6,8 +6,7 @@
 <a href="https://github.com/eMUQI/baidunetdisk-arm64-vnc">
 <img alt="Github Stars" src="https://img.shields.io/github/stars/emuqi/baidunetdisk-arm64-vnc?style=flat"/>
 </a>
-
----
+</br></br>
 
 基于百 度网盘官方Linux-arm版本，安装在docker容器内，支持通过noVNC（网页）或者VNC访问。
 支持树莓派4B arm64版本系统，理论上也支持其他arm64的设备。
