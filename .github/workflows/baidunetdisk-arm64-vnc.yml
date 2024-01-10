@@ -3,7 +3,7 @@ name: baidunetdisk-arm64-vnc
 on:
   push:
     paths:
-    - 'baidunetdisk/Dockerfile.arm64'
+    - 'Dockerfile.arm64'
   workflow_dispatch:
 
 jobs:
